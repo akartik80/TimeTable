@@ -1,0 +1,307 @@
+* {
+    -fx-primary-color: #1F9166;
+    -fx-background-clr: #d8d2d2;
+}
+
+//correct
+
+
+.root {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: -fx-primary-color;
+    -fx-padding: 1em;
+}
+
+.tabPane {
+    -fx-background-color: -fx-background-clr;
+    -fx-tab-min-height: 70pt;
+    -fx-tab-max-height: 70pt;
+}
+
+.col {
+    -fx-background-color: -fx-primary-color;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-base: #E1E7E7;
+    -fx-opacity: 0.9;
+}
+
+.first-col {
+    -fx-background-color: #5A5A5A;
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #EBE1E2;
+    -fx-opacity: 0.9;
+}
+
+.label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #E1E7E7;
+    -fx-opacity: 1;
+}
+
+.tab {
+    -fx-background-color: #5A5A5A;
+    -fx-text-fill: #E1E7E7;
+    -fx-focus-color: transparent;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent;
+}
+
+/* Selected row */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-background-clr;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Selected row when table not focused */
+.table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-background-clr;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: #555555;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+/* Selected row hovered */
+.table-view:focused .table-row-cell:filled:focused:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-background-clr;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Selected row hovered when table not focused */
+.table-view:row-selection .table-row-cell:filled:focused:hover {
+    -fx-background-color: -fx-background-clr;
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1, 2 2 3 2, 3 3 4 3;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.pagination .pagination-control {
+    -fx-background-color: -fx-background-clr;    
+}
+
+.pagination .pagination-control .bullet-button {
+    -fx-background-color: transparent, -fx-primary-color, -fx-primary-color, white, white;
+}
+
+.pagination .pagination-control .bullet-button:selected {   
+    -fx-background-color: transparent, -fx-primary-color, -fx-primary-color, white, -fx-primary-color;
+}
+
+.pagination .pagination-control .left-arrow, .right-arrow{
+    -fx-background-color: -fx-primary-color, -fx-primary-color;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+}
+
+.class-label {
+    -fx-font-size: 25pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #595959;
+    -fx-opacity: 0.8;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab {
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+
+.tab:selected {
+    -fx-background-color: -fx-background-clr;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #dddddd;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #5A5A5A;
+    -fx-font-size: 22px;
+    -fx-padding: 10px;
+}
+
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, derive(-fx-control-inner-background,-20%);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-focus-color: transparent;
+}
+
+.days {
+    -fx-text-fill: #eeeeee;
+    -fx-background-color: -fx-primary-color
+}
+
+.else {
+    -fx-background-color: #F6F6F6;
+    -fx-text-fill: #5A5A5A;
+    -fx-opacity: 0.8;
+}
+
+.actual-button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: -fx-primary-color;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+}
+
+.button:hover{
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed
+{
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+}
+
+.button:focused
+{
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled
+{
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default
+{
+    -fx-background-color: #008287;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover{
+    -fx-background-color: #219297;
+}
+
+.scroll-bar .thumb{
+    -fx-background-color: #b8b8b8;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-color: #cacaca;
+}
+
+/* The following is not working. Maybe related to RT-10521*/
+.scroll-bar .thumb:pressed {
+    -fx-color: #1e1e1e;
+}
+
+
+.scroll-bar .track {
+    -fx-background-color: #4a4a4a;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.scroll-bar .track-background {
+    -fx-background-color: #4a4a4a;
+    -fx-background-insets: 0;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #4a4a4a;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+
+    -fx-padding: 0.25em; /* 3 */
+}
+
+.scroll-bar .increment-button:hover, .scroll-bar .decrement-button:hover  {
+    -fx-background-color: #cacaca;
+}
+
+.scroll-bar .increment-button:pressed, .scroll-bar .decrement-button:pressed {
+    -fx-background-color: #1e1e1e;
+}
+
+.scroll-bar:horizontal .increment-arrow {
+    -fx-background-color: #1e1e1e, #1e1e1e;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+    -fx-shape: "M7.626,12.876L4.251,8.751H7.14L11,12.876L7.14,17H4.251L7.626,12.876z";
+}
+
+.scroll-bar:vertical .increment-arrow {
+    -fx-background-color: #1e1e1e, #1e1e1e;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em;  /*4 6 0 0 */
+    -fx-shape: "M8.124,13.625l4.125-3.375v2.889l-4.125,3.86L4,13.139V10.25L8.124,13.625z";
+}
+
+.scroll-bar .increment-button:pressed .increment-arrow {
+    -fx-background-color: white, white;
+}
+
+.scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: #1e1e1e, #1e1e1e;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+    -fx-shape: "M11,17H8.111l-3.86-4.124l3.86-4.125H11l-3.375,4.125L11,17z";
+}
+
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: #1e1e1e, #1e1e1e;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em; /* 4 6 0 0 */
+    -fx-shape: "M4,17v-2.889l4.124-3.86l4.125,3.86V17l-4.125-3.375L4,17z";
+}
+
+.scroll-bar .decrement-button:pressed .decrement-arrow {
+    -fx-background-color: white, white;
+}
+
+.scroll-bar:disabled {
+    -fx-opacity: 0.4;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ScrollPane                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.scroll-pane {
+    -fx-background-color: transparent,-fx-background;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: black, #4a4a4a;
+}
