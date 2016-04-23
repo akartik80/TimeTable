@@ -224,7 +224,7 @@ public class GUI extends Application {
             @Override
 
             public void handle(ActionEvent arg0) {
-                boolean k = time2.checkValid();
+                boolean k = time2._checkValid.checkValid();
                 if (k == true) {
                     Stage dialogStage = new Stage();
                     dialogStage.initModality(Modality.WINDOW_MODAL);
